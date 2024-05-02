@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+   <fieldset>
+    <form>
+        <label for="purch-invoice"> Purchase Invoice Number</label>
+        <input type="number" id="purch-invoice"> 
+
+        <label for="supp-invoice"> Supplier Invoice Number</label>
+        <input type="text" id="supp-invoice"> 
+
+        <label for="invoice-date"> Invoice Date</label>
+        <input type="text" id="invoice-date"> 
+
+        <label for="supp-name"> Supplier Name</label>
+        <input type="text" id="supp-name"> <!-- Supplier Name field added -->
+
+        <label for="supp-invoice-date"> Supplier invoice Date</label>
+        <input type="date" id="supp-invoice-date"> <!-- Changed ID -->
+
+        <label for="vehicle"> Vehicle</label>
+        <input type="text" id="vehicle"> <!-- Changed ID -->
+
+        <label for="address"> Address </label>
+        <input type="text" id="address"> 
+
+        <label for="town"> Town </label>
+        <input type="text" id="town"> 
+
+        <label for="gstin-uin">GSTIN/UIN:</label>
+        <input type="text" id="gstin-uin"> <!-- GSTIN/UIN field added -->
+
+        <label for="broker"> Broker </label>
+        <input type="text" id="broker" value="WISE CREDENCE"> <!-- Broker field pre-filled -->
+
+        <label for="material"> Material </label>
+        <select>
+            <option>RAW</option>
+            <option>BOILED</option>
+            <option>STEAM</option>
+        </select>
+
+        <label for="invoice-rate"> Invoice rate</label>
+        <input type="text" id="invoice-rate"> 
+
+        <label for="actual-rate"> Actual Rate</label>
+        <input type="text" id="actual-rate" disabled> 
+
+        <div class="quantity-particulars">
+            <table border="solid">
+                <thead>
+                    <th> Unit </th>
+                    <th> Invoiced </th>
+                    <th> Recieved </th>
+                </thead>
+
+                <tbody>
+                    <th> KGS </th>
+                    <td> <input id="kgs-invoiced" type="number"> </td>
+                    <td> <input id="kgs-recieved" type="number"> </td>
+                </tbody>
+
+                <tbody>
+                    <th> BAGS </th>
+                    <td> <input id="bags-invoiced" type="number"> </td>
+                    <td> <input id="bags-recieved" type="number"> </td>
+                </tbody>
+
+                <tbody>
+                    <th> FFA </th>
+                    <td> <input id="ffa-invoiced" type="number"> </td>
+                    <td> <input id="ffa-recievd" type="number"> </td>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="laboratory-analysis">
+            <table border="solid">
+                <thead>
+                    <th> Item </th>
+                    <th> Condition </th>
+                    <th> Result </th>
+                    <th> Diff </th>
+                </thead>
+
+                <tbody>
+                    <th> Oil </th>
+                    <td> <input id="oil-condition" type="number" value=""> </td>
+                    <td> <input id="oil-result" type="number" value=""> </td>
+                    <td> <input id="oil-diff" type="number" disabled> </td>
+                </tbody>
+
+                <tbody>
+                    <th> SS </th>
+                    <td> <input id="ss-condition" type="number" value=""> </td>
+                    <td> <input id="ss-result" type="number" value=""> </td>
+                    <td> <input type="number"> </td>
+                </tbody>
+
+                <tbody>
+                    <th> FFA </th>
+                    <td> <input id="ffa-condition" type="number" value=""> </td>
+                    <td> <input id="ffa-result" type="number" value=""> </td>
+                    <td> <input id="ffa-diff" type="number" disabled> </td>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- HSN Code Label -->
+        <label for="hsn-code">HSN Code:</label>
+        <input type="text" id="hsn-code">
+        
+        <label for="ffa-rebeat"> FFA Rebeat </label>
+        <input type="number" id="ffa-rebeat" value="">
+
+        <!-- New Labels -->
+        <label for="oil-deduction"> Oil Deduction </label>
+        <input type="number" id="oil-deduction" value="">
+
+        <label for="ffa-deduction"> FFA Deduction </label>
+        <input type="number" id="ffa-deduction" value="">
+
+        <label for="total1"> Cost of Rice Bran </label>
+        <input type="number" id="total1" value="">
+
+        <label for="per-bag"> Unloading charge per bag </label>
+        <input type="number" id="per-bag" value="">
+
+        <label for="unload-charge"> Unloading Charges </label>
+        <input type="number" id="unload-charge" value="">
+
+        <label for="total2"> Total </label>
+        <input type="number" id="total2" value="">
+
+        <label for="cgst"> Add : CGST @ 2.50% </label>
+        <input id="cgst" type="number" disabled>
+
+        <label for="sgst"> Add : SGST @ 2.50% </label>
+        <input id="sgst" type="number" disabled>
+
+        <label for="net"> <b>NET PAYABLE WITH TAX </b></label>
+        <input id="net" type="number" disabled> 
+        
+    </form>
+   </fieldset>
+    
+    <script src="script.js"></script>
+</body>
+</html>
